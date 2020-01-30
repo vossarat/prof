@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="C:\websites\prof\prof.clpprj">
 	<settings><PM_URL><![CDATA[]]></PM_URL><PM_HOME_URL><![CDATA[]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
-		<file name="C:\websites\prof\resources\views\layouts\header.blade.php"/>
+		<file name="C:\websites\prof\resources\views\layouts\template.blade.php"/>
 	</lastopfiles>
 	<errors version="5.11">
 	</errors>
@@ -40,7 +40,7 @@
 		<file name="C:\websites\prof\resources\views\layouts\form\date.blade.php" crc="1568461442"/>
 		<file name="C:\websites\prof\resources\views\layouts\form\checkbox.blade.php" crc="1564799196"/>
 		<file name="C:\websites\prof\resources\views\layouts\topmenu.blade.php" crc="1570886106"/>
-		<file name="C:\websites\prof\resources\views\layouts\template.blade.php" crc="1566464654"/>
+		<file name="C:\websites\prof\resources\views\layouts\template.blade.php" crc="1571756393"/>
 		<file name="C:\websites\prof\resources\views\layouts\infomessage.blade.php" crc="1555557100"/>
 		<file name="C:\websites\prof\resources\views\layouts\header.blade.php" crc="1571465409"/>
 		<file name="C:\websites\prof\resources\views\layouts\dashboard.blade.php" crc="1570885826"/>
@@ -75,7 +75,9 @@
 		<file name="C:\websites\prof\public\css\bootstrap.min.css" crc="1566463612"/>
 		<file name="C:\websites\prof\public\css\bootstrap-datetimepicker.css" crc="1498849210"/>
 		<file name="C:\websites\prof\public\css\app.css" crc="1514987536"/>
+		<file name="C:\websites\prof\public\sw.js" crc="1571754853"/>
 		<file name="C:\websites\prof\public\robots.txt" crc="1514987536"/>
+		<file name="C:\websites\prof\public\offline.html" crc="1571754843"/>
 		<file name="C:\websites\prof\public\index.php" crc="1514987536"/>
 		<file name="C:\websites\prof\public\.htaccess" crc="1514987536"/>
 		<file name="C:\websites\prof\database\seeds\DatabaseSeeder.php" crc="1514987536"/>
@@ -129,8 +131,9 @@
 		<file name="C:\websites\prof\app\Mo.php" crc="1570870536"/>
 		<file name="C:\websites\prof\app\ChildBirthday.php" crc="1567249090"/>
 		<file name="C:\websites\prof\app\Card.php" crc="1570886540"/>
-		<file name="C:\websites\prof\webpack.mix.js" crc="1514987536"/>
+		<file name="C:\websites\prof\webpack.mix.js" crc="1571752925"/>
 		<file name="C:\websites\prof\server.php" crc="1514987536"/>
 		<file name="C:\websites\prof\phpunit.xml" crc="1514987536"/>
+		<file name="C:\websites\prof\composer-setup.php" crc="1571464085"/>
 	</filescache>
 </project>

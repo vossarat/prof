@@ -20,6 +20,16 @@
 		            Добавить сотрудника
 		        </a>
 		    </li>
+		     <li>
+		        <a href="{{ route('biot.index') }}">
+		            Информация БИОТ
+		        </a>
+		    </li>
+		    <li>
+		        <a href="{{ route('treasury.index') }}">
+		            Казначейство
+		        </a>
+		    </li>
 		@endif
 		
 	
@@ -38,6 +48,18 @@
 			            </li>
 			            <li>
 			                <a href="{{ route('mo.index') }}">Справочник МО</a>
+			            </li>
+			        </ul>
+		    </li> 
+		    
+		    <li class="dropdown">
+		        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+		            Отчеты
+		            <span class="caret"></span>
+		        </a>
+			        <ul class="dropdown-menu">
+			            <li>
+			                <a href="{{ route('reportCountMembers') }}">Кол-во введенных сотрудников</a>
 			            </li>
 			        </ul>
 		    </li>

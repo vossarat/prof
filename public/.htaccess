@@ -4,6 +4,11 @@
     </IfModule>
 
     RewriteEngine On
+	
+	#RewriteCond %{HTTP_HOST} ^([^www].*)$
+	#RewriteRule ^(.*)$ https://www.%1/$1 [L,R=301]
+	#RewriteCond %{HTTP_HOST} ^www\.(.*)$
+	#RewriteRule ^(.*)$ https://%1/$1 [L,R=301] 
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

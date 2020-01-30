@@ -18,13 +18,14 @@ class LoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers;
-    
+    use AuthenticatesUsers;    
 
 	// check if authenticated, then redirect to dashboard
 	protected function authenticated() {
-		if ( \Auth::id() == 1 ) {
+		if ( \Auth::user()->profile_id == 1 ) {
 			return redirect()->route('user.index');
+		} elseif( \Auth::user()->profile_id == 2 ) {
+			return redirect()->route('card.index');
 		} else {
 			return redirect()->route('home');
 		}

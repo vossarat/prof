@@ -25,6 +25,9 @@ class CardController extends Controller
      */
     public function index()
     {
+    	if ( \Auth::user()->profile_id == 1 ) {
+			return redirect()->route('user.index');
+		} 
         return view('card.index')->with([        
 			'viewdata' => $this->card->where('user_id', \Auth::id())->orderBy('id','desc')->paginate(30),
 		]);
@@ -176,6 +179,7 @@ class CardController extends Controller
 	        	'surname' => 'required',
 	        	'name' => 'required',
 	        	'sex_id' => 'required|integer',
+	        	'position_id' => 'required|integer',
 	        	'birthday' => 'required|date_format:"d.m.Y"',
 	        	'experience' => 'required|date_format:"d.m.Y"',
 	        	//'experience_special' => 'required|date_format:"d.m.Y"',
@@ -189,6 +193,7 @@ class CardController extends Controller
 	            //'tradeunion.required' => 'укажите дату вступления в профсоюз',
 	            'name.required' => 'укажите имя',
 	            'sex_id.integer' => 'укажите пол',
+	            'position_id.integer' => 'укажите должность',
 	        	'date_format' => 'некорректная дата',
             ]
         )->validate();

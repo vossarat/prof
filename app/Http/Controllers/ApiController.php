@@ -7,11 +7,11 @@ use Illuminate\Support\Facades\DB;
 
 class ApiController extends Controller
 {
-    public function getMkb($icd)
+    public function getMkb($icd = '')
     {
     	if( $icd == '' ) return  'НЕ УКАЗАНО';
     	$mkb = DB::table('mkb')->select()->where('icd', $icd)->first();
-		if( count($mkb) == 0 ) return  'КОД ЗАБОЛЕВАНИЯ НЕ НАЙДЕН В СПРАВОЧНИКЕ';
+		if( count((array)$mkb) == 0 ) return  'КОД ЗАБОЛЕВАНИЯ НЕ НАЙДЕН В СПРАВОЧНИКЕ';
 		return  $mkb->name;
     }
 }

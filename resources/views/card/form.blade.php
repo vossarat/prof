@@ -96,7 +96,7 @@
 	
 	function getNameMKB(icd){
 		$.ajax({
-			url: '/api/mkb/' + icd,
+			url: '/api/app/mkb/' + icd,
 			success: function(data) {					
 				$('#dispensary_description').val(data);
 			}
