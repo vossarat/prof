@@ -10,7 +10,7 @@
 		<!-- CSRF Token -->
 		<meta name="csrf-token" content="{{ csrf_token() }}">
 
-		<title>Картотека профсоюза</title>
+		<title>_Картотека профсоюза</title>
 
 		<!-- icons -->
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
