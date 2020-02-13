@@ -29,7 +29,7 @@ class CardController extends Controller
 			return redirect()->route('user.index');
 		} 
         return view('card.index')->with([        
-			'viewdata' => $this->card->where('user_id', \Auth::id())->orderBy('id','desc')->paginate(30),
+			'viewdata' => $this->card->where('user_id', \Auth::id())->orderBy('id','desc')->get(),
 		]);
     }
 

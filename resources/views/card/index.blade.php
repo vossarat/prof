@@ -82,8 +82,9 @@ $(document).ready(function() {
 	        },
     	},
     	"aoColumnDefs": [
-          { 'bSortable': false, 'aTargets': [ 2, 3, 4, 5 ] }
-       ]
+          { 'bSortable': true, 'aTargets': [ 1, 2, 3, 4, 5 ] }
+       ],
+       "order": [[ 1, "desc" ]]
 	});
 } );
 </script>

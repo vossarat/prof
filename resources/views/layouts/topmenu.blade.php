@@ -14,6 +14,18 @@
 	    </li>
 	    --}}
     @else
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+				Отчеты
+				<span class="caret"></span>
+			</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="{{ route('reportCountMembers') }}">Кол-во введенных сотрудников</a>
+					</li>
+				</ul>
+		</li>
+	
 	    @if ( Auth::user()->id > 1 )
 		    <li>
 		        <a href="{{ route('card.create') }}">
@@ -51,18 +63,6 @@
 			            </li>
 			        </ul>
 		    </li> 
-		    
-		    <li class="dropdown">
-		        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-		            Отчеты
-		            <span class="caret"></span>
-		        </a>
-			        <ul class="dropdown-menu">
-			            <li>
-			                <a href="{{ route('reportCountMembers') }}">Кол-во введенных сотрудников</a>
-			            </li>
-			        </ul>
-		    </li>
 	    @endif
 	    
 	    <li class="dropdown">

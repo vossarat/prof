@@ -29,12 +29,18 @@ class CountMembersController extends Controller{
 		$startdate = new Carbon($this->request->startdate);
 		$enddate = new Carbon($this->request->enddate);
 		
-		$viewdata = DB::table('cards')
-			->select('mos.name', DB::raw('count(*) as total'))
+		$query = Card::query();		
+		
+		$query->select('mos.name', DB::raw('count(*) as total'))
 			->groupBy('mos.name')
 			->leftJoin('users', 'cards.user_id', '=', 'users.id' )
-			->leftJoin('mos', 'users.mo_id', '=', 'mos.id' )
-			->get();
+			->leftJoin('mos', 'users.mo_id', '=', 'mos.id' ) ;
+			
+		if( \Auth::id() > 1 ) {
+			$query->where( 'users.id', \Auth::id() ) ;
+		}
+			
+		$viewdata = $query->get();
 		
 		return view('reports.cnt_members_output')->with([
 			'viewdata' => $viewdata,
