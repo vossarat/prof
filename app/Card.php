@@ -40,6 +40,11 @@ class Card extends Model
         return "{$this->surname} {$this->name} {$this->middlename}";
     }
     
+    public function position()
+	{
+		return $this->belongsTo(Position::class);
+	}
+    
     /*public function child_birthdays()
     {
     	return $this->hasMany('App\ChildBirthday')->withPivot('birthday');

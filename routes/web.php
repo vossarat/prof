@@ -33,8 +33,11 @@ function()
     Route::prefix('reports')->group(
         function ()
         {
-            Route::any('/count_members', 'CountMembersController@index')->name('reportCountMembers'); //Кол-во введенных сотрудников
-            Route::any('/count_members/pdf', 'CountMembersController@toPDF')->name('reportCountMembersToPDF'); //Кол-во введенных сотрудников в PDF
+            Route::any('/count_members', 'Reports\CountMembersController@index')->name('reportCountMembers'); //Кол-во введенных сотрудников
+            Route::any('/count_members/pdf', 'Reports\CountMembersController@toPDF')->name('reportCountMembersToPDF'); //Кол-во введенных сотрудников в PDF
+            Route::any('/count_sex_age', 'Reports\CountSexAgeController@index')->name('reportCountSexAge'); //Половозрастная структура
+            Route::any('/count_sex_age_child', 'Reports\CountSexAgeChildController@index')->name('reportCountSexAgeChild'); //Половозрастная структура детей
+            Route::any('/count_sex_proffesion', 'Reports\CountSexProfessionController@index')->name('reportCountSexProfession'); //Профессия-пол 
         });
 });
 
