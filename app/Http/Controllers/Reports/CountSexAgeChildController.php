@@ -32,8 +32,16 @@ class CountSexAgeChildController extends Controller
 		$startdate = new Carbon($this->request->startdate);
 		$enddate = new Carbon($this->request->enddate);
 		
+		$userAuthId = Auth::id() ;
 		
-		$cards = Card::select( DB::raw( "STR_TO_DATE(child_birthdays.birthday, '%m.%d.%Y') as childbirthday") )->where( 'user_id', Auth::id() )->leftJoin('child_birthdays', function($join) {
+		$cards = Card::select( DB::raw( "STR_TO_DATE(child_birthdays.birthday, '%m.%d.%Y') as childbirthday") )
+			->where(
+				function($query) use ( $userAuthId ){
+					if( $userAuthId > 1 ){
+						$query->where('user_id', '=', $userAuthId);
+					}
+				})		
+			->leftJoin('child_birthdays', function($join) {
 		      $join->on('cards.id', '=', 'child_birthdays.card_id');
 		    })
 		    ->whereNotNull('child_birthdays.birthday')
@@ -57,7 +65,7 @@ class CountSexAgeChildController extends Controller
 		return view('reports.cnt_sex_age_child_output')->with([
 			'startdate' => date("d-m-Y",strtotime($this->request->startdate)),
 			'enddate' => date("d-m-Y",strtotime($this->request->enddate)),
-			'moName' => Auth::user()->mo->name,
+			'moName' => Auth::user()->id > 1 ? Auth::user()->mo->name : 'по всем МО',
 			'age_0_5' => $age_0_5,
 			'age_6_7' => $age_6_7,
 			'age_8_10' => $age_8_10,

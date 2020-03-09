@@ -23,7 +23,7 @@
 					<li>
 						<a href="{{ route('reportCountMembers') }}">Кол-во введенных сотрудников</a>
 					</li>				
-					@if ( Auth::user()->id > 1 )
+					
 					<li>
 						<a href="{{ route('reportCountSexAge') }}">Половозрастная структура</a>
 					</li>
@@ -33,7 +33,7 @@
 					<li>
 						<a href="{{ route('reportCountSexProfession') }}">Кол-во в разрезе профессий</a>
 					</li>
-					@endif
+					
 				</ul>
 		</li>
 	

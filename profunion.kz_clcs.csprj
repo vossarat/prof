@@ -72,38 +72,38 @@
 </treenode>
 <treenode node="Controller;PHP:Class Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Controller.php;f0;9;1;12;;;;vpos;;vBaseController;;cAuthorizesRequests;;c;;r;;d0,10;;b0,0;;m">
 </treenode>
-<treenode node="CountMembersController;PHP:Class Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountMembersController.php;f0;7;1;10;;C:\websites\prof.tarassov.tk\app\Http\Controllers\CountMembersController.php;f0;11;1;78;;;;vpos;;vController;;c;;r;;d47,11;;b0,0;;m">
-<treenode node="__construct;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\CountMembersController.php;f8;13;2;16;;;;vpos;;v;;r;;d1,14;;b1,0;;mrequest;;p">
+<treenode node="CountMembersController;PHP:Class Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\CountMembersController.php;f0;11;1;78;;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountMembersController.php;f0;11;1;78;;;;vpos;;vController;;c;;r;;d0,12;;b0,0;;m">
+<treenode node="__construct;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\CountMembersController.php;f8;13;2;16;;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountMembersController.php;f11;13;2;16;;;;vpos;;v;;r;;d1,14;;b1,0;;mrequest;;p">
 </treenode>
-<treenode node="index;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\CountMembersController.php;f8;18;2;50;;;;vpos;;v;;r;;d1,19;;b1,0;;m">
+<treenode node="index;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\CountMembersController.php;f8;18;2;50;;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountMembersController.php;f8;18;2;50;;;;vpos;;v;;r;;d1,19;;b1,0;;m">
 </treenode>
-<treenode node="toPDF;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\CountMembersController.php;f8;52;2;63;;;;vpos;;v;;r;;d1,53;;b1,0;;m">
+<treenode node="toPDF;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\CountMembersController.php;f8;52;2;63;;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountMembersController.php;f8;52;2;63;;;;vpos;;v;;r;;d1,53;;b1,0;;m">
 </treenode>
-<treenode node="validator;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\CountMembersController.php;f11;65;5;77;;;;vpos;;v;;r;;d4,66;;b2,0;;mdata;;p">
+<treenode node="validator;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\CountMembersController.php;f11;65;5;77;;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountMembersController.php;f11;65;5;77;;;;vpos;;v;;r;;d4,66;;b2,0;;mdata;;p">
 </treenode>
 </treenode>
-<treenode node="CountSexAgeChildController;PHP:Class Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeChildController.php;f0;14;1;86;;;;vpos;;vController;;c;;r;;d0,15;;b0,0;;m">
+<treenode node="CountSexAgeChildController;PHP:Class Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeChildController.php;f0;14;1;92;;;;vpos;;vController;;c;;r;;d0,15;;b0,0;;m">
 <treenode node="__construct;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeChildController.php;f11;16;2;19;;;;vpos;;v;;r;;d1,17;;b1,0;;mrequest;;p">
 </treenode>
-<treenode node="index;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeChildController.php;f11;21;2;71;;;;vpos;;v;;r;;d1,22;;b1,0;;m">
+<treenode node="index;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeChildController.php;f11;21;2;77;;;;vpos;;v;;r;;d1,22;;b1,0;;m">
 </treenode>
-<treenode node="validator;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeChildController.php;f11;73;5;85;;;;vpos;;v;;r;;d4,74;;b2,0;;mdata;;p">
+<treenode node="validator;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeChildController.php;f11;79;5;91;;;;vpos;;v;;r;;d4,80;;b2,0;;mdata;;p">
 </treenode>
 </treenode>
-<treenode node="CountSexAgeController;PHP:Class Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeController.php;f0;14;1;83;;;;vpos;;vController;;c;;r;;d0,15;;b0,0;;m">
+<treenode node="CountSexAgeController;PHP:Class Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeController.php;f0;14;1;87;;;;vpos;;vController;;c;;r;;d0,15;;b0,0;;m">
 <treenode node="__construct;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeController.php;f8;16;2;19;;;;vpos;;v;;r;;d1,17;;b1,0;;mrequest;;p">
 </treenode>
-<treenode node="index;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeController.php;f11;21;2;68;;;;vpos;;v;;r;;d1,22;;b1,0;;m">
+<treenode node="index;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeController.php;f11;21;2;72;;;;vpos;;v;;r;;d1,22;;b1,0;;m">
 </treenode>
-<treenode node="validator;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeController.php;f11;70;5;82;;;;vpos;;v;;r;;d4,71;;b2,0;;mdata;;p">
+<treenode node="validator;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeController.php;f11;74;5;86;;;;vpos;;v;;r;;d4,75;;b2,0;;mdata;;p">
 </treenode>
 </treenode>
-<treenode node="CountSexProfessionController;PHP:Class Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexProfessionController.php;f0;15;1;63;;;;vpos;;vController;;c;;r;;d0,16;;b0,0;;m">
+<treenode node="CountSexProfessionController;PHP:Class Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexProfessionController.php;f0;15;1;71;;;;vpos;;vController;;c;;r;;d0,16;;b0,0;;m">
 <treenode node="__construct;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexProfessionController.php;f10;17;2;20;;;;vpos;;v;;r;;d1,18;;b1,0;;mrequest;;p">
 </treenode>
-<treenode node="index;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexProfessionController.php;f11;22;2;48;;;;vpos;;v;;r;;d1,23;;b1,0;;m">
+<treenode node="index;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexProfessionController.php;f11;22;2;56;;;;vpos;;v;;r;;d1,23;;b1,0;;m">
 </treenode>
-<treenode node="validator;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexProfessionController.php;f11;50;5;62;;;;vpos;;v;;r;;d4,51;;b2,0;;mdata;;p">
+<treenode node="validator;PHP:Function Name;C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexProfessionController.php;f11;58;5;70;;;;vpos;;v;;r;;d4,59;;b2,0;;mdata;;p">
 </treenode>
 </treenode>
 <treenode node="CreateBiotsTable;PHP:Class Name;C:\websites\prof.tarassov.tk\database\migrations\2019_11_19_013051_create_biots_table.php;f0;6;1;50;;;;vpos;;vMigration;;c;;r;;d0,7;;b0,0;;m">

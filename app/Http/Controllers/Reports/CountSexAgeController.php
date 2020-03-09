@@ -32,8 +32,12 @@ class CountSexAgeController extends Controller
 		$startdate = new Carbon($this->request->startdate);
 		$enddate = new Carbon($this->request->enddate);
 		
+		$query = Card::query();
+		if ( \Auth::id() > 1 ) {
+		    $query = $query->where( 'user_id', Auth::id() );
+		}
 		
-		$cards = Card::where( 'user_id', Auth::id() )->get();
+		$cards = $query->get();
 		
 		$ages_report = array(
 			array( 18,20 ),
@@ -54,7 +58,7 @@ class CountSexAgeController extends Controller
 		return view('reports.cnt_sex_age_output')->with([
 			'startdate' => date("d-m-Y",strtotime($this->request->startdate)),
 			'enddate' => date("d-m-Y",strtotime($this->request->enddate)),
-			'moName' => Auth::user()->mo->name,
+			'moName' => Auth::user()->id > 1 ? Auth::user()->mo->name : 'по всем МО',
 			'age_18_20' => $age_18_20,
 			'age_21_30' => $age_21_30,
 			'age_31_40' => $age_31_40,

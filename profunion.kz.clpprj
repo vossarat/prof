@@ -29,7 +29,7 @@
 		<file name="C:\websites\prof.tarassov.tk\resources\views\reports\cnt_sex_age_child_output.blade.php" crc="1583605631"/>
 		<file name="C:\websites\prof.tarassov.tk\resources\views\reports\cnt_sex_age_child.blade.php" crc="1583604752"/>
 		<file name="C:\websites\prof.tarassov.tk\resources\views\reports\cnt_sex_age.blade.php" crc="1581741464"/>
-		<file name="C:\websites\prof.tarassov.tk\resources\views\reports\cnt_members_output.blade.php" crc="1583567084"/>
+		<file name="C:\websites\prof.tarassov.tk\resources\views\reports\cnt_members_output.blade.php" crc="1583728354"/>
 		<file name="C:\websites\prof.tarassov.tk\resources\views\reports\cnt_members.blade.php" crc="1583567084"/>
 		<file name="C:\websites\prof.tarassov.tk\resources\views\references\user\index.blade.php" crc="1583567084"/>
 		<file name="C:\websites\prof.tarassov.tk\resources\views\references\user\form.blade.php" crc="1583567084"/>
@@ -50,7 +50,7 @@
 		<file name="C:\websites\prof.tarassov.tk\resources\views\layouts\form\password.blade.php" crc="1583567084"/>
 		<file name="C:\websites\prof.tarassov.tk\resources\views\layouts\form\date.blade.php" crc="1583567084"/>
 		<file name="C:\websites\prof.tarassov.tk\resources\views\layouts\form\checkbox.blade.php" crc="1583567084"/>
-		<file name="C:\websites\prof.tarassov.tk\resources\views\layouts\topmenu.blade.php" crc="1583604817"/>
+		<file name="C:\websites\prof.tarassov.tk\resources\views\layouts\topmenu.blade.php" crc="1583729297"/>
 		<file name="C:\websites\prof.tarassov.tk\resources\views\layouts\template.blade.php" crc="1583567084"/>
 		<file name="C:\websites\prof.tarassov.tk\resources\views\layouts\svg.blade.php" crc="1583567084"/>
 		<file name="C:\websites\prof.tarassov.tk\resources\views\layouts\label2.blade.php" crc="1583567084"/>
@@ -145,10 +145,10 @@
 		<file name="C:\websites\prof.tarassov.tk\app\Http\Middleware\TrimStrings.php" crc="1583567084"/>
 		<file name="C:\websites\prof.tarassov.tk\app\Http\Middleware\RedirectIfAuthenticated.php" crc="1583567084"/>
 		<file name="C:\websites\prof.tarassov.tk\app\Http\Middleware\EncryptCookies.php" crc="1583567084"/>
-		<file name="C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexProfessionController.php" crc="1583604096"/>
-		<file name="C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeController.php" crc="1583601814"/>
-		<file name="C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeChildController.php" crc="1583609093"/>
-		<file name="C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountMembersController.php" crc="1583567084"/>
+		<file name="C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexProfessionController.php" crc="1583729512"/>
+		<file name="C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeController.php" crc="1583729422"/>
+		<file name="C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountSexAgeChildController.php" crc="1583729969"/>
+		<file name="C:\websites\prof.tarassov.tk\app\Http\Controllers\Reports\CountMembersController.php" crc="1583728006"/>
 		<file name="C:\websites\prof.tarassov.tk\app\Http\Controllers\Auth\ResetPasswordController.php" crc="1583567084"/>
 		<file name="C:\websites\prof.tarassov.tk\app\Http\Controllers\Auth\RegisterController.php" crc="1583567084"/>
 		<file name="C:\websites\prof.tarassov.tk\app\Http\Controllers\Auth\LoginController.php" crc="1583567084"/>

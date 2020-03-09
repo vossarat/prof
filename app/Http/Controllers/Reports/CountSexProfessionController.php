@@ -33,14 +33,22 @@ class CountSexProfessionController extends Controller
 		$startdate = new Carbon($this->request->startdate);
 		$enddate = new Carbon($this->request->enddate);		
 		
-		$cards = Card::where( 'user_id', Auth::id() )->get();
+		//$cards = Card::where( 'user_id', Auth::id() )->get();
+		
+		$query = Card::query();
+		if ( \Auth::id() > 1 ) {
+		    $query = $query->where( 'user_id', Auth::id() );
+		}
+		
+		$cards = $query->get();
+		
 		$professions = $cards->groupBy('position_id');
 		//dd($professions);
 		
 		return view('reports.cnt_sex_proffesion_output')->with([
 			'startdate' => date("d-m-Y",strtotime($this->request->startdate)),
 			'enddate' => date("d-m-Y",strtotime($this->request->enddate)),
-			'moName' => Auth::user()->mo->name,
+			'moName' => Auth::user()->id > 1 ? Auth::user()->mo->name : 'по всем МО',
 			'viewdata' => $professions,
 			'positions' => Position::all(),
 			'cards' => $cards,
