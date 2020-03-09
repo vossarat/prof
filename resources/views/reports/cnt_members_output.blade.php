@@ -35,6 +35,10 @@
 			@endforeach
 
 		</tbody>
+		<tfoot>
+			<th>Итого</th>
+			<th>{{ $viewdata->sum('total') }}</th> 
+		</tfoot>
 	</table>
     
 </div>
