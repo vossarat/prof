@@ -33,6 +33,9 @@
 					<li>
 						<a href="{{ route('reportCountSexProfession') }}">Кол-во в разрезе профессий</a>
 					</li>
+					<li>
+						<a href="{{ route('reportItsHome') }}">Наличие собственного жилья</a>
+					</li>
 					
 				</ul>
 		</li>

@@ -38,6 +38,7 @@ function()
             Route::any('/count_sex_age', 'Reports\CountSexAgeController@index')->name('reportCountSexAge'); //Половозрастная структура
             Route::any('/count_sex_age_child', 'Reports\CountSexAgeChildController@index')->name('reportCountSexAgeChild'); //Половозрастная структура детей
             Route::any('/count_sex_proffesion', 'Reports\CountSexProfessionController@index')->name('reportCountSexProfession'); //Профессия-пол 
+            Route::any('/count_itshome', 'Reports\CountItsHomeController@index')->name('reportItsHome'); //Наличие собственного жилья
         });
 });
 

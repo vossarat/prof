@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
 
-class CountMembersController extends Controller
+class CountItsHomeController extends Controller
 {
     public function __construct(Request $request)
 	{
@@ -19,7 +19,7 @@ class CountMembersController extends Controller
 	public function index()
 	{	
     	if ($this->request->isMethod('get')) {
-			return view('reports.cnt_members')->with([
+			return view('reports.cnt_itshome')->with([
 				'viewdata' => array(),
 			]);
 		}
@@ -31,7 +31,10 @@ class CountMembersController extends Controller
 		
 		$query = Card::query();		
 		
-		$query->select('mos.name', DB::raw('count(*) as total'))
+		$query->select('mos.name', DB::raw('count(*) as total'), 
+			DB::raw('SUM(case when cards.itshome = 1 then 1 else 0 end) as itshome'), 
+			DB::raw('SUM(case when cards.itshome = 0 then 1 else 0 end) as itsnohome') 
+		)
 			->groupBy('mos.name')
 			->leftJoin('users', 'cards.user_id', '=', 'users.id' )
 			->leftJoin('mos', 'users.mo_id', '=', 'mos.id' ) 
@@ -43,7 +46,7 @@ class CountMembersController extends Controller
 			
 		$viewdata = $query->get();
 		
-		return view('reports.cnt_members_output')->with([
+		return view('reports.cnt_itshome_output')->with([
 			'viewdata' => $viewdata,
 			'startdate' => date("d-m-Y",strtotime($this->request->startdate)),
 			'enddate' => date("d-m-Y",strtotime($this->request->enddate)),
